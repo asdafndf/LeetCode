@@ -17,7 +17,7 @@ def is_palindrome_v2(x):
 
 
 def is_palindrome_v3(x):
-    if (x < 0) or (x%10 == 0):
+    if (x < 0) or (x > 0 and x%10 == 0):
         return False
     
     result = 0
