@@ -2,6 +2,7 @@
 # Return True if s is an anagram of t
 # ------------------------------------
 from collections import defaultdict
+from collections import Counter
 
 s = "abcd"
 t = "dcba"
@@ -48,9 +49,14 @@ def is_anagram_v4(s, t):
     return True
 
 
+def is_anagram_v5(s, t):
+    return Counter(s) == Counter(t)
+
+
 #is_anagram(s, t)
 #is_anagram_v2(s, t)
 #is_anagram_v3(s, t)
 #is_anagram_v4(s, t)
+#is_anagram_v5(s, t)
 
 
